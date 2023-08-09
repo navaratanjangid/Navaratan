@@ -1,0 +1,20 @@
+{
+	"name": "input",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservicecopy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Syllabus Computer Science and Engg. V & VI Semester-22-23.pdf",
+				"folderPath": "folder1",
+				"container": "demo"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

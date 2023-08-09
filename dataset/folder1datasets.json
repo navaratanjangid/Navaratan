@@ -1,0 +1,19 @@
+{
+	"name": "folder1datasets",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "linkedservicecopy",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"folderPath": "folder1",
+				"container": "demo"
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

@@ -1,0 +1,9 @@
+{
+	"name": "navarataadf",
+	"location": "eastus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b3b24331-d5e7-415b-89e2-b30fc38cc587",
+		"tenantId": "48faacc7-129d-4a89-892d-a49f3cf4e232"
+	}
+}

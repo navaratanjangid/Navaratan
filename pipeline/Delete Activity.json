@@ -1,0 +1,48 @@
+{
+	"name": "Delete Activity",
+	"properties": {
+		"activities": [
+			{
+				"name": "Delete1",
+				"type": "Delete",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "file deleted",
+						"value": "all .txt fill in folder1 of demo container"
+					}
+				],
+				"typeProperties": {
+					"dataset": {
+						"referenceName": "folder1datasets",
+						"type": "DatasetReference"
+					},
+					"logStorageSettings": {
+						"linkedServiceName": {
+							"referenceName": "linkedservicecopy",
+							"type": "LinkedServiceReference"
+						},
+						"path": "demo/folder1"
+					},
+					"enableLogging": true,
+					"storeSettings": {
+						"type": "AzureBlobStorageReadSettings",
+						"recursive": true,
+						"wildcardFileName": "*.txt",
+						"enablePartitionDiscovery": false
+					}
+				}
+			}
+		],
+		"annotations": [],
+		"lastPublishTime": "2023-08-02T06:29:58Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
